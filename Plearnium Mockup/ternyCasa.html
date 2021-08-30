@@ -1,0 +1,91 @@
+<html>
+    <style>
+        html{
+        background: url(terny.jpeg);
+        background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url(terny.jpeg);
+        font-family: 'Archivo Black', sans-serif;
+        }
+        table{
+            text-align: center;
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td{
+            padding: 10px;
+        } 
+        thead{
+            background-color: orange;
+            
+        }  
+        button{
+            color: white;
+            background-color: red; 
+            border: none; 
+            border-radius: 6px;
+            padding: 10px 24px;
+            transition-duration: 0.4s;
+
+        }
+        button:hover {
+            background-color: orange; 
+        }
+        .container {
+            position: relative;
+            width: 100%;
+            max-width: 400px;
+        }
+
+        .container img {
+            width: 100%;
+            height: auto;
+        }
+
+        .container button {
+            transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);
+            font-size: 16px;
+            border: none;
+            cursor: pointer;
+            text-align: center;
+            color: white;
+            background-color: red; 
+            border: none; 
+            border-radius: 6px;
+            padding: 10px 24px;
+            transition-duration: 0.4s;
+        }
+        .container button:hover {
+            background-color: orange;
+        }
+        .container .interact{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+        }
+    </style>
+    <head>
+        <title> Juego </title>
+    </head>
+    <body style = "color: antiquewhite;", >
+    
+    <div id = "menu botones">
+        <h1> <img src="ternium.jpeg" width="150" height="40" alt="Ternium"> Juego</h1> 
+        <div id = "menu botones">
+            <button class="red">Configuracion</button>
+            <button onclick="location.href = 'Menu.html';" class="red">Menu</button>
+            <button onclick="location.href = 'Juego.html';" class="red">Juego</button>
+        </div>
+        <div class = "container">
+            <img src = "TernyCasa.jpeg">
+            <div class = "interact">
+            <button onclick = "location.href = 'Feedback.html';" class="red">Feedback</button>
+            <button onclick = "location.href = 'Ranking.html';" class="red">Ranking</button>
+            </div>
+        </div>
+    <div> 
+    <embed src="MusicaJuego.mp3" autostarty = "true" loop = "true" volume ="80" width="0" height="0">
+    <audio controls autoplay>
+        <source src="MusicaJuego.mp3" type="audio/mpeg">
+    </audio>
+    </body>
+</html>
